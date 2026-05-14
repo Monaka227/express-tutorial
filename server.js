@@ -4,6 +4,8 @@ const PORT = 3000;
 const userRouter = require("./routes/user");
 
 app.use(express.static("public"));
+app.set("view engine", "ejs");
+
 app.get("/", (req, res) => {
     console.log("Hello World");
     res.send("<h1>Hello World</h1>");

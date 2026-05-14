@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/Monaka227/express-tutorial#readme",
   "dependencies": {
+    "ejs": "^5.0.2",
     "express": "^5.2.1",
     "nodemon": "^3.1.14"
   }
