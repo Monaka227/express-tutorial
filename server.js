@@ -1,8 +1,17 @@
 const express = require("express");
 const app = express();
 const PORT = 300;
+const userRouter = require("./routes/user");
 
+app.get("/", (req, res) => {
+    console.log("Hello World");
+    res.send("<h1>Hello World</h1>");
+    // res.sendStatus(500);
+    // res.status(500).send("Internal Server Error");
+    // res.status(500).json({ message: "Internal Server Error" });
+})
 
-
+// routing
+app.use("/user", userRouter);
 
 app.listen(PORT, () => console.log("Server is running on port "));
